@@ -1,0 +1,12 @@
+<main>
+    <section class="todo-list" *ngFor="let todo of todos |slice:0+pageNumber*5:5+pageNumber*5">
+      <app-todo [todo]="todo" (removeTodo)="removeTodo($event)"></app-todo>
+    </section>
+
+    <section class="todo-actions">
+      <button type="button" [disabled]="pageNumber<=0" (click)="previousPage()">Previous</button>
+      <button type="button" [disabled]="(pageNumber+1)*5>=todos.length" (click)="nextPage()">Next</button>
+    </section>
+  </main>
+
+  <button class="add-button" type="button" [routerLink]="'add-todo'">+</button>

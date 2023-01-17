@@ -1,0 +1,45 @@
+
+  .todo-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px 20px 0 20px;
+  }
+
+  input {
+    margin-right: 10px;
+  }
+
+  .todo-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .todo-actions button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color .3s;
+  }
+
+  .todo-actions button:hover {
+    color: rgb(43, 131, 231);
+  }
+
+
+
+  .add-button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(43, 131, 231);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 30px;
+  }

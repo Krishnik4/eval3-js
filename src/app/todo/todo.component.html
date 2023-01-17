@@ -1,0 +1,11 @@
+<div class="todo-card">
+    <input type="checkbox" [checked]="todo.completed">
+
+    <p>{{todo.title}}</p>
+
+    <button class="todo-remove" type="button" (click)="removeTodoClick()">
+      <span class="material-symbols-outlined">
+        delete
+      </span>
+    </button>
+  </div>

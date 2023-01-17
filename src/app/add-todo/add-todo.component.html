@@ -1,0 +1,10 @@
+<main>
+    <form class="todo-form" (submit)="addTask(this.todo)" #addTodoForm="ngForm">
+      <input id="title" type="text" name="title" placeholder="Enter task" [(ngModel)]="todo.title" required>
+
+      <div class="todo-form-actions">
+        <button class="cancel-button" type="button" (click)="cancel()">Cancel</button>
+        <button class="add-button" type="submit" [disabled]="!addTodoForm.valid">Add</button>
+      </div>
+    </form>
+  </main>
